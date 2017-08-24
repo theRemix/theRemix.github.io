@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.1
+ * Version 6.4.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -484,6 +484,13 @@ button {
 pre {
   overflow: auto; }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; }
+
 .is-visible {
   display: block !important; }
 
@@ -533,7 +540,7 @@ pre {
   flex: 1 1 0px;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  min-width: initial; }
+  min-width: 0; }
   @media print, screen and (min-width: 40em) {
     .column, .columns {
       padding-right: 0.9375rem;
@@ -548,38 +555,6 @@ pre {
   margin-left: 0;
   padding-right: 0;
   padding-left: 0; }
-
-.flex-container {
-  display: -ms-flexbox;
-  display: flex; }
-
-.flex-child-auto {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
-
-.flex-child-grow {
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
-
-.flex-child-shrink {
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto; }
-
-.flex-dir-row {
-  -ms-flex-direction: row;
-  flex-direction: row; }
-
-.flex-dir-row-reverse {
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-
-.flex-dir-column {
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.flex-dir-column-reverse {
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse; }
 
 .small-1 {
   -ms-flex: 0 0 8.33333%;
@@ -676,30 +651,6 @@ pre {
 
 .small-offset-11 {
   margin-left: 91.66667%; }
-
-.small-order-1 {
-  -ms-flex-order: 1;
-  order: 1; }
-
-.small-order-2 {
-  -ms-flex-order: 2;
-  order: 2; }
-
-.small-order-3 {
-  -ms-flex-order: 3;
-  order: 3; }
-
-.small-order-4 {
-  -ms-flex-order: 4;
-  order: 4; }
-
-.small-order-5 {
-  -ms-flex-order: 5;
-  order: 5; }
-
-.small-order-6 {
-  -ms-flex-order: 6;
-  order: 6; }
 
 .small-up-1 {
   -ms-flex-wrap: wrap;
@@ -846,24 +797,6 @@ pre {
     max-width: 100%; }
   .medium-offset-11 {
     margin-left: 91.66667%; }
-  .medium-order-1 {
-    -ms-flex-order: 1;
-    order: 1; }
-  .medium-order-2 {
-    -ms-flex-order: 2;
-    order: 2; }
-  .medium-order-3 {
-    -ms-flex-order: 3;
-    order: 3; }
-  .medium-order-4 {
-    -ms-flex-order: 4;
-    order: 4; }
-  .medium-order-5 {
-    -ms-flex-order: 5;
-    order: 5; }
-  .medium-order-6 {
-    -ms-flex-order: 6;
-    order: 6; }
   .medium-up-1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -926,44 +859,19 @@ pre {
     -ms-flex: 1 1 0px;
     flex: 1 1 0px; } }
 
-@media print, screen and (min-width: 40em) {
-  .medium-flex-dir-row {
-    -ms-flex-direction: row;
-    flex-direction: row; }
-  .medium-flex-dir-row-reverse {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse; }
-  .medium-flex-dir-column {
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .medium-flex-dir-column-reverse {
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
-  .medium-flex-child-auto {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
-  .medium-flex-child-grow {
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
-  .medium-flex-child-shrink {
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto; } }
-
-.row.medium-unstack > .column, .row.medium-unstack > .columns {
+.row.small-unstack > .column, .row.small-unstack > .columns {
   -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
-  @media print, screen and (min-width: 40em) {
-    .row.medium-unstack > .column, .row.medium-unstack > .columns {
-      -ms-flex: 1 1 0px;
-      flex: 1 1 0px; } }
+  flex: 0 0 100%;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px; }
 
 @media print, screen and (min-width: 40em) {
-  .medium-collapse > .column, .medium-collapse > .columns {
+  .small-collapse > .column, .small-collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
+  .small-uncollapse > .column, .small-uncollapse > .columns {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; } }
 
 @media print, screen and (min-width: 64em) {
   .large-1 {
@@ -1038,24 +946,6 @@ pre {
     max-width: 100%; }
   .large-offset-11 {
     margin-left: 91.66667%; }
-  .large-order-1 {
-    -ms-flex-order: 1;
-    order: 1; }
-  .large-order-2 {
-    -ms-flex-order: 2;
-    order: 2; }
-  .large-order-3 {
-    -ms-flex-order: 3;
-    order: 3; }
-  .large-order-4 {
-    -ms-flex-order: 4;
-    order: 4; }
-  .large-order-5 {
-    -ms-flex-order: 5;
-    order: 5; }
-  .large-order-6 {
-    -ms-flex-order: 6;
-    order: 6; }
   .large-up-1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -1118,44 +1008,19 @@ pre {
     -ms-flex: 1 1 0px;
     flex: 1 1 0px; } }
 
-@media print, screen and (min-width: 64em) {
-  .large-flex-dir-row {
-    -ms-flex-direction: row;
-    flex-direction: row; }
-  .large-flex-dir-row-reverse {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse; }
-  .large-flex-dir-column {
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .large-flex-dir-column-reverse {
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
-  .large-flex-child-auto {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
-  .large-flex-child-grow {
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
-  .large-flex-child-shrink {
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto; } }
-
-.row.large-unstack > .column, .row.large-unstack > .columns {
+.row.small-unstack > .column, .row.small-unstack > .columns {
   -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
-  @media print, screen and (min-width: 64em) {
-    .row.large-unstack > .column, .row.large-unstack > .columns {
-      -ms-flex: 1 1 0px;
-      flex: 1 1 0px; } }
+  flex: 0 0 100%;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px; }
 
 @media print, screen and (min-width: 64em) {
-  .large-collapse > .column, .large-collapse > .columns {
+  .small-collapse > .column, .small-collapse > .columns {
     padding-right: 0;
     padding-left: 0; }
-  .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
+  .small-uncollapse > .column, .small-uncollapse > .columns {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; } }
 
 .shrink {
   -ms-flex: 0 0 auto;
@@ -1223,15 +1088,23 @@ pre {
   position: absolute !important;
   width: 1px;
   height: 1px;
+  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0); }
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0; }
 
 .show-on-focus:active, .show-on-focus:focus {
   position: static !important;
   width: auto;
   height: auto;
   overflow: visible;
-  clip: auto; }
+  clip: auto;
+  white-space: normal;
+  -webkit-clip-path: none;
+  clip-path: none; }
 
 .show-for-landscape,
 .hide-for-portrait {
@@ -1290,6 +1163,14 @@ pre {
 .align-spaced {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+
+.align-right.vertical.menu > li > a {
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.align-center.vertical.menu > li > a {
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .align-top {
   -ms-flex-align: start;
@@ -1397,6 +1278,90 @@ pre {
     -ms-flex-order: 6;
     order: 6; } }
 
+.flex-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-child-auto {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.flex-child-grow {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+.flex-child-shrink {
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+
+.flex-dir-row {
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.flex-dir-row-reverse {
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.flex-dir-column {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.flex-dir-column-reverse {
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+
+@media print, screen and (min-width: 40em) {
+  .medium-flex-container {
+    display: -ms-flexbox;
+    display: flex; }
+  .medium-flex-child-auto {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+  .medium-flex-child-grow {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .medium-flex-child-shrink {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+  .medium-flex-dir-row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .medium-flex-dir-row-reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+  .medium-flex-dir-column {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .medium-flex-dir-column-reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+@media print, screen and (min-width: 64em) {
+  .large-flex-container {
+    display: -ms-flexbox;
+    display: flex; }
+  .large-flex-child-auto {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+  .large-flex-child-grow {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .large-flex-child-shrink {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+  .large-flex-dir-row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .large-flex-dir-row-reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+  .large-flex-dir-column {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .large-flex-dir-column-reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
 body {
   background-color: #FAFAFA; }
 
@@ -1479,8 +1444,12 @@ h2 {
     content: "Work"; }
   h2.experience-title:before {
     content: "Experience"; }
+  h2.projects-title:before {
+    content: "Projects"; }
   h2.education-title:before {
     content: "Education"; }
+  h2.community-title:before {
+    content: "Workshops / Community"; }
   h2 span {
     display: none; }
 
@@ -1542,7 +1511,8 @@ ul.contact, ul.contact li {
 li.icon-github,
 li.icon-email,
 li.icon-linkedin,
-li.icon-twitter {
+li.icon-twitter,
+li.icon-download {
   background-size: 20px auto;
   background-position: left center;
   background-repeat: no-repeat; }
@@ -1558,6 +1528,9 @@ li.icon-linkedin {
 
 li.icon-twitter {
   background-image: url("../images/hexagon-twitter.svg"); }
+
+li.icon-download {
+  background-image: url("../images/hexagon-download.svg"); }
 
 ul.skills,
 ul.awards {
@@ -1594,12 +1567,26 @@ h4 .education-text {
 
 ul.work,
 ul.experience,
-ul.education {
+ul.education,
+ul.projects,
+ul.community {
   list-style-type: none; }
   ul.work li + li,
   ul.experience li + li,
-  ul.education li + li {
+  ul.education li + li,
+  ul.projects li + li,
+  ul.community li + li {
     margin-top: 30px; }
+
+ul.bullets {
+  list-style-type: disc;
+  margin-left: 20px; }
+  ul.bullets li + li {
+    margin-top: 10px; }
+
+ul.community .date {
+  width: 100px;
+  display: inline-block; }
 
 .profile-pic {
   max-width: 300px;
