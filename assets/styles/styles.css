@@ -1450,6 +1450,11 @@ h2 {
     content: "Education"; }
   h2.community-title:before {
     content: "Workshops / Community"; }
+  h2.play-games-title:before {
+    content: "Play Some Games"; }
+  h2.flash-games-title:before {
+    content: "If you still have flash installed, play these games"; }
+
   h2 span {
     display: none; }
 
