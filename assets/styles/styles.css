@@ -1266,13 +1266,13 @@ a {
     color: #186e73;
     transition: all 0.2s ease; }
     .software-resume a:hover {
-      color: #e87e02; }
+      color: #20969e; }
     .site-reliability-resume a:hover {
-      color: #74888f; }
+      color: #20969e; }
   .software-resume a {
-    color: #FD9720; }
+    color: #29BEC8; }
   .site-reliability-resume a {
-    color: #90A0A6; }
+    color: #29BEC8; }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
@@ -1286,9 +1286,9 @@ h1 {
   margin-top: 10px;
   text-align: center; }
   .software-resume h1 {
-    color: #FD9720; }
+    color: #29BEC8; }
   .site-reliability-resume h1 {
-    color: #90A0A6; }
+    color: #29BEC8; }
   h1 span {
     transform: translateX(-4px);
     display: block; }
@@ -1325,9 +1325,9 @@ h2 {
     flex: 0 0 auto;
     padding-right: 5px; }
     .software-resume h2:before {
-      color: #FD9720; }
+      color: #29BEC8; }
     .site-reliability-resume h2:before {
-      color: #90A0A6; }
+      color: #29BEC8; }
   h2:after {
     content: " ";
     -ms-flex: 1 1 auto;
@@ -1335,9 +1335,9 @@ h2 {
     border-bottom: 7px solid #29BEC8;
     transform: translateY(-2px); }
     .software-resume h2:after {
-      border-bottom-color: #FD9720; }
+      border-bottom-color: #29BEC8; }
     .site-reliability-resume h2:after {
-      border-bottom-color: #90A0A6; }
+      border-bottom-color: #29BEC8; }
   h2.skills-title:before {
     content: "Skills"; }
   h2.awards-title:before {
@@ -1401,9 +1401,9 @@ ul.contact {
   margin-top: 35px;
   padding-top: 35px; }
   .software-resume ul.contact {
-    border-top-color: #FD9720; }
+    border-top-color: #29BEC8; }
   .site-reliability-resume ul.contact {
-    border-top-color: #90A0A6; }
+    border-top-color: #29BEC8; }
   ul.contact li {
     list-style-type: none;
     padding-left: 30px;
@@ -1415,9 +1415,9 @@ ul.contact {
       ul.contact li a:hover {
         color: #29BEC8; }
         .software-resume ul.contact li a:hover {
-          color: #FD9720; }
+          color: #29BEC8; }
         .site-reliability-resume ul.contact li a:hover {
-          color: #90A0A6; }
+          color: #29BEC8; }
 
 ul.contact, ul.contact li {
   font-family: 'Raleway', "Helvetica Nueue", sans-serif;
@@ -1436,37 +1436,37 @@ li.icon-download {
 li.icon-github {
   background-image: url("../images/hexagon-github.svg"); }
   .software-resume li.icon-github {
-    background-image: url("../images/hexagon-github-orange.svg"); }
+    background-image: url("../images/hexagon-github.svg"); }
   .site-reliability-resume li.icon-github {
-    background-image: url("../images/hexagon-github-grey.svg"); }
+    background-image: url("../images/hexagon-github.svg"); }
 
 li.icon-email {
   background-image: url("../images/hexagon-email.svg"); }
   .software-resume li.icon-email {
-    background-image: url("../images/hexagon-email-orange.svg"); }
+    background-image: url("../images/hexagon-email.svg"); }
   .site-reliability-resume li.icon-email {
-    background-image: url("../images/hexagon-email-grey.svg"); }
+    background-image: url("../images/hexagon-email.svg"); }
 
 li.icon-linkedin {
   background-image: url("../images/hexagon-linkedin.svg"); }
   .software-resume li.icon-linkedin {
-    background-image: url("../images/hexagon-linkedin-orange.svg"); }
+    background-image: url("../images/hexagon-linkedin.svg"); }
   .site-reliability-resume li.icon-linkedin {
-    background-image: url("../images/hexagon-linkedin-grey.svg"); }
+    background-image: url("../images/hexagon-linkedin.svg"); }
 
 li.icon-twitter {
   background-image: url("../images/hexagon-twitter.svg"); }
   .software-resume li.icon-twitter {
-    background-image: url("../images/hexagon-twitter-orange.svg"); }
+    background-image: url("../images/hexagon-twitter.svg"); }
   .site-reliability-resume li.icon-twitter {
-    background-image: url("../images/hexagon-twitter-grey.svg"); }
+    background-image: url("../images/hexagon-twitter.svg"); }
 
 li.icon-download {
   background-image: url("../images/hexagon-download.svg"); }
   .software-resume li.icon-download {
-    background-image: url("../images/hexagon-download-orange.svg"); }
+    background-image: url("../images/hexagon-download.svg"); }
   .site-reliability-resume li.icon-download {
-    background-image: url("../images/hexagon-download-grey.svg"); }
+    background-image: url("../images/hexagon-download.svg"); }
 
 ul.skills,
 ul.awards {
@@ -1493,9 +1493,9 @@ div.statement {
     div.statement {
       margin-top: 8px; } }
   .software-resume div.statement {
-    border-top-color: #FD9720; }
+    border-top-color: #29BEC8; }
   .site-reliability-resume div.statement {
-    border-top-color: #90A0A6; }
+    border-top-color: #29BEC8; }
 
 h4 .education-text {
   font-family: 'Open Sans', "Helvetica Nueue", sans-serif;
@@ -1544,8 +1544,6 @@ ul.community .date {
   flex-flow: row wrap;
   -ms-flex-align: center;
   align-items: center; }
-  .software-resume .header-bar {
-    background-color: #FD9720; }
   .header-bar .profile-pic {
     -ms-flex: 0 0 35px;
     flex: 0 0 35px;
@@ -1654,10 +1652,6 @@ ul.public-projects {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     margin: 0 0 20px; }
-    .software-resume ul.play-games > li, .software-resume
-    ul.flash-games > li, .software-resume
-    ul.public-projects > li {
-      border-color: #FD9720; }
     @media screen and (min-width: 40em) {
       ul.play-games > li,
       ul.flash-games > li,
@@ -1672,6 +1666,14 @@ ul.public-projects {
         -ms-flex: 0 0 31%;
         flex: 0 0 31%;
         margin: 0 1.1666667% 25px; } }
+    ul.play-games > li h3, ul.play-games > li ul, ul.play-games > li a,
+    ul.flash-games > li h3,
+    ul.flash-games > li ul,
+    ul.flash-games > li a,
+    ul.public-projects > li h3,
+    ul.public-projects > li ul,
+    ul.public-projects > li a {
+      transition: all 0.2s ease; }
     ul.play-games > li a,
     ul.flash-games > li a,
     ul.public-projects > li a {
