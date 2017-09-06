@@ -491,6 +491,7 @@ ul.community .date{
     flex-flow: row nowrap;
 
     @include breakpoint(large){
+      flex: 0 0 auto;
       text-align: right;
     }
   }
@@ -501,7 +502,7 @@ ul.community .date{
     padding-left: 0;
 
     @include breakpoint(large){
-      flex: 0 0 1;
+      flex: 0 0 auto;
       margin-right: 20px;
     }
   }
@@ -530,6 +531,7 @@ ul.community .date{
     padding: 0;
     line-height: 40px;
     width: 35px;
+    height: 40px;
     overflow: hidden;
     display: block;
     background-position: center center;
@@ -596,7 +598,7 @@ ul.public-projects{
     //   }
 
     //   ul{
-        
+
     //   }
     // }
 

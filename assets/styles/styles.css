@@ -1579,6 +1579,8 @@ ul.community .date {
     flex-flow: row nowrap; }
     @media screen and (min-width: 64em) {
       .header-bar ul.contact {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
         text-align: right; } }
   .header-bar ul.contact li {
     -ms-flex: 0 0 35px;
@@ -1587,8 +1589,8 @@ ul.community .date {
     padding-left: 0; }
     @media screen and (min-width: 64em) {
       .header-bar ul.contact li {
-        -ms-flex: 0 0 1;
-        flex: 0 0 1;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
         margin-right: 20px; } }
   .header-bar li.icon-email,
   .header-bar li.icon-linkedin,
@@ -1606,6 +1608,7 @@ ul.community .date {
     padding: 0;
     line-height: 40px;
     width: 35px;
+    height: 40px;
     overflow: hidden;
     display: block;
     background-position: center center;
