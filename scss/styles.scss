@@ -295,6 +295,7 @@ li.icon-github,
 li.icon-email,
 li.icon-linkedin,
 li.icon-twitter,
+li.icon-exercism,
 li.icon-download{
   background-size: 20px auto;
   background-position: left center;
@@ -346,6 +347,18 @@ li.icon-twitter{
 
   .site-reliability-resume &{
     background-image: url('../images/hexagon-twitter.svg');
+  }
+}
+
+li.icon-exercism{
+  background-image: url('../images/hexagon-exercism.svg');
+
+  .software-resume &{
+    background-image: url('../images/hexagon-exercism.svg');
+  }
+
+  .site-reliability-resume &{
+    background-image: url('../images/hexagon-exercism.svg');
   }
 }
 
@@ -503,13 +516,14 @@ ul.community .date{
 
     @include breakpoint(large){
       flex: 0 0 auto;
-      margin-right: 20px;
+      margin: 0 15px 0 5px;
     }
   }
 
   li.icon-email,
   li.icon-linkedin,
-  li.icon-twitter{
+  li.icon-twitter,
+  li.icon-exercism{
     background-image: none;
   }
 
@@ -523,6 +537,10 @@ ul.community .date{
 
   li.icon-twitter a{
     background-image: url('../images/hexagon-twitter-white.svg');
+  }
+
+  li.icon-exercism a{
+    background-image: url('../images/hexagon-exercism-white.svg');
   }
 
   ul.contact li a{
