@@ -8,23 +8,19 @@ var sassPaths = [
   'bower_components/motion-ui/src'
 ];
 
-// keeps gulp from crashing for scss errors
-gulp.task('sass', function () {
+const compileSass = () => gulp.src('./scss/*.scss')
+  .pipe($.sass({
+    includePaths: sassPaths
+  })
+    .on('error', sass.logError))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('./assets/styles'));
 
-  return gulp.src('./scss/*.scss')
-    .pipe($.sass({
-      includePaths: sassPaths
-    })
-      .on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest('./assets/styles'));
-});
+gulp.task('sass', compileSass);
 
-gulp.task('watch', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
-});
+gulp.task('watch', () => gulp.watch('./scss/**/*.scss', compileSass));
 
-gulp.task('default', ['watch', 'sass']);
+gulp.task('default', gulp.parallel('watch', 'sass'));
