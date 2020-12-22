@@ -1,8 +1,8 @@
 # Portfolio and Resume
 ## Jon Borgonia
 
-[Online Resume](http://theRemix.github.io)
+[Online Resume](https://theRemix.github.io)
 
 [Resume PDF](./Resume.pdf)
 
-[Portfolio PDF](http://theRemix.github.io/portfolio.pdf)
+[Portfolio PDF](https://theRemix.github.io/portfolio.pdf)
